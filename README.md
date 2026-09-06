@@ -139,7 +139,7 @@ Empirical latency and throughput benchmarks measured on Windows 11 with hardware
 | **Memory Sanitization** | Non-scrubbed (`String` immutable in GC) | **< 0.05 µs (`SecureZeroMemory`)** | **100% RAM Forensics & Heap Dump Immunity** |
 
 > [!NOTE]
-> **Environment & Setup**: Measured on Windows 11 x64, Intel Core i7 with hardware TPM 2.0 chip and Windows Hello security subsystem. Standard Java stores strings in GC heap memory where they persist indefinitely; `FastKeychain` integrates with bare-metal Windows kernel DPAPI and zeroizes native memory immediately upon cryptographic consumption.
+> **Environment & Setup**: Measured on a **Microsoft Surface Pro 8** (11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz, 4C/8T), Windows 11 Home (x64), OpenJDK 21 LTS with hardware TPM 2.0 chip and Windows Hello security subsystem. Standard Java stores strings in GC heap memory where they persist indefinitely; `FastKeychain` integrates with bare-metal Windows kernel DPAPI and zeroizes native memory immediately upon cryptographic consumption.
 
 ---
 
