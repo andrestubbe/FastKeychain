@@ -221,10 +221,10 @@ Download the latest pre-compiled JARs:
 
 ## Documentation
 
-* **[`docs/REFERENCE.md`](docs/REFERENCE.md)**: Full API descriptions and security contracts.
-* **[`docs/PHILOSOPHY.md`](docs/PHILOSOPHY.md)**: The engineering rationale for hardware-anchored zero-heap security.
-* **[`docs/ROADMAP.md`](docs/ROADMAP.md)**: Future milestones (DPAPI-NG, macOS Keychain, Linux Secret Service).
-* **[`docs/CHANGELOG.md`](docs/CHANGELOG.md)**: Detailed version history.
+* **[REFERENCE.md](docs/REFERENCE.md)**: Full API descriptions and security contracts.
+* **[PHILOSOPHY.md](docs/PHILOSOPHY.md)**: The engineering rationale for hardware-anchored zero-heap security.
+* **[ROADMAP.md](docs/ROADMAP.md)**: Future milestones (DPAPI-NG, macOS Keychain, Linux Secret Service).
+* **[CHANGELOG.md](docs/CHANGELOG.md)**: Detailed version history.
 
 ---
 
