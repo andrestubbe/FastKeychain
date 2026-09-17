@@ -68,6 +68,13 @@ Standard Java applications suffer from fundamental security vulnerabilities when
 - **Windows Credential Manager Integration**: Native persistence via `CredWriteW` / `CredReadW` residing in the secure Windows Credential Vault.
 - **Zero-String Memory Scrubbing**: Automatically scrubs native buffers with `SecureZeroMemory` and primitive Java arrays with `Arrays.fill((byte)0)`.
 
+| Feature | Java KeyStore (JKS/PKCS12) | Plaintext .env / Config | FastKeychain |
+|:---|:---|:---|:---|
+| **Hardware Binding** | Password-based (no TPM binding)| None (Fully portable file) | **Windows DPAPI + TPM 2.0 chip binding** |
+| **Credential Storage** | File on disk requiring password| Readable by any process / malware| **Secure Windows Credential Vault** |
+| **Memory Security** | Keys linger in JVM heap strings| Plain strings linger in RAM | **Native `SecureZeroMemory` scrubbing** |
+| **User Experience** | Manual password prompt on startup| Insecure automation | **Transparent auto-unlock per OS user** |
+
 ---
 
 ## Key Features
